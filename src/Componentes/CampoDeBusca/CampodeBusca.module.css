@@ -1,3 +1,19 @@
+.campoBusca{
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #dadada;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 .img{
     width: 25px;
 }
@@ -9,7 +25,8 @@
     outline: none;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
+    border-left: 2px solid #f3f3f3;
 }
 .input:focus{
-    border-left: 1px solid;
+    border-left: 2px solid #dadada;
 }

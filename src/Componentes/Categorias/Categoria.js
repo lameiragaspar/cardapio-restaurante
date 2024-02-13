@@ -4,7 +4,8 @@ import CampoBusca from "../CampoDeBusca/campodeBusca.js";
 import { filtraCategoria, listaProdutos, buscaProduto } from "../../servico/funcoes.js";
 import styles from './Categoria.module.css'
 
-const BotaoCategoria = () =>{
+const SecaoCategoria = () => {
+    
     const [textoDeBusca, setTextoDeBusca] = useState("")
     const [cardapio, setCardapio] = useState(listaProdutos())
     const [activeButton, setActiveButton] = useState("Entradas")
@@ -60,11 +61,11 @@ const BotaoCategoria = () =>{
             {/**Fim dos Botões */}
 
             {/*Campo de busca*/}
-            <section className={styles.campoBusca}>
+            <>
                 <CampoBusca 
                 valor={textoDeBusca}
                 funcao={(event) => handleBuscaProduto(event.target.value)}/>
-            </section>
+            </>
             {/*Fim do Campo de busca*/}
 
             {/**Cardapio*/}
@@ -77,11 +78,15 @@ const BotaoCategoria = () =>{
                         imagem={cards.imagem}
                         categoria={cards.categoria}
                         descricao={cards.descricao}
-                        preco={`R$ `+ cards.preco}/>
+                        preco={`R$ `+ cards.preco}>
+                            <div className={styles.cards}>
+                                
+                            </div>
+                        </Card>
                     ))}
                 </div>
             </section>
         </>
     )
 }
-export default BotaoCategoria
+export default SecaoCategoria

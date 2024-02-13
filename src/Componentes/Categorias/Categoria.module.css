@@ -6,10 +6,10 @@
     gap: 10px;
 }
 
-button.button,button.entrada,
-button.massa,button.carne,
-button.bebidas,button.salada,
-button.sobremesa{
+.button,.entrada,
+.massa,.carne,
+.bebidas,.salada,
+.sobremesa{
     box-shadow: 0 0 5px #00000041;
     width: 160px;
     margin: 10px 0;
@@ -24,9 +24,9 @@ button.sobremesa{
     justify-content: center;
     gap: 5px;
 }
-button.entrada, button.massa,
-button.carne, button.bebidas,
-button.salada, button.sobremesa{
+.entrada, .massa,
+.carne, .bebidas,
+.salada, .sobremesa{
     background-color: #daa520;
 }
 .button img,.entrada img,
@@ -45,23 +45,19 @@ button.salada, button.sobremesa{
     background-color: #dbdbdb;
 }
 /*Fim da Classe dos botoes*/
-/*Campo de busca*/
-.campoBusca{
-    margin-top: 20px;
-    background-color: #fff;
-    border: 2px solid #f3f3f3;
-    padding: 5px;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+/*Cards*/
+.cardapioCards .cards{
+    width: 100%;
+    height: 100%;
+    background: #daa520 url(/img/espaguete.jpg) no-repeat center bottom;
+    background-size: cover;
 }
 /*Cardapio*/
 .cardapio h2{
     font-family: 'Dancing Script', cursive;
     text-align: center;
     color: #daa520;
+    font-weight: bold;
     font-size: 32px;
     padding: 20px;
 }
