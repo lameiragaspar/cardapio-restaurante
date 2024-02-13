@@ -46,10 +46,131 @@
 }
 /*Fim da Classe dos botoes*/
 /*Cards*/
-.cardapioCards .cards{
+.cardapioCards .id{
     width: 100%;
     height: 100%;
-    background: #daa520 url(/img/espaguete.jpg) no-repeat center bottom;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cardapioCards .id-1{
+    background: url(/img/espaguete.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-2{
+    background:url(/img/lasanha.jpg)no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-3{
+    background: url(/img/ravioli.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-4{
+    background: url(/img/capeletti.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-5{
+    background: url(/img/nhoque.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-6{
+    background: url(/img/bruschetta.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-7{
+    background: url(/img/carpaccio.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-8{
+    background: url(/img/paella.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-9{
+    background: url(/img/ebi-spicy.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-10{
+    background: url(/img/aligot.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-11{
+    background: url(/img/file-mignon.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-12{
+    background:url(/img/picanha.png)no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-13{
+    background: url(/img/bife-ancho.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-14{
+    background: url(/img/tomahawk-steak.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-15{
+    background: url(/img/prime-rib.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-16{
+    background: url(/img/tiramisu.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-17{
+    background: url(/img/cheesecake.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-18{
+    background: url(/img/banoffee.png) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-19{
+    background: url(/img/mil-folhas.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-20{
+    background: url(/img/pudim.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-21{
+    background: url(/img/cerveja.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-22{
+    background:url(/img/refrigerante.jpg)no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-23{
+    background: url(/img/suco.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-24{
+    background: url(/img/whiskey.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-25{
+    background: url(/img/agua.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-26{
+    background: url(/img/salada-ceasar.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-27{
+    background: url(/img/salada-caprese.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-28{
+    background: url(/img/salada-waldorf.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-29{
+    background: url(/img/salada-grega.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cardapioCards .id-30{
+    background: url(/img/salada-nicoise.jpg) no-repeat center center;
     background-size: cover;
 }
 /*Cardapio*/

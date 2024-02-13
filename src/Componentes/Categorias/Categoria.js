@@ -72,14 +72,14 @@ const SecaoCategoria = () => {
             <section className={styles.cardapio}>
                 <h2>Cardápio</h2>
                 <div className={styles.cardapioCards}>
-                    {cardapio.map((cards) =>(
-                        <Card key={cards.id}
-                        nome={cards.nome}
-                        imagem={cards.imagem}
-                        categoria={cards.categoria}
-                        descricao={cards.descricao}
-                        preco={`R$ `+ cards.preco}>
-                            <div className={styles.cards}>
+                    {cardapio.map((card) =>(
+                        <Card key={card.id}
+                        nome={card.nome}
+                        imagem={card.imagem}
+                        categoria={card.categoria}
+                        descricao={card.descricao}
+                        preco={`R$ `+ card.preco}>
+                            <div className={`${styles.id} ${styles[`id-${card.id}`]}`}>
                                 
                             </div>
                         </Card>

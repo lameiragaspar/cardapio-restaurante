@@ -1,6 +1,6 @@
 .box{
     width: 250px;
-    max-width: 500px;
+    /*max-width: 500px;*/
     border: 1px solid #daa520;
     border-radius: 7px;
     overflow: hidden;
