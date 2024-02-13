@@ -1,0 +1,15 @@
+poppins e dancing script
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+
+Paleta de cores
+#daa520
+#fff
+#f3f3f3
+#000000
+#fff

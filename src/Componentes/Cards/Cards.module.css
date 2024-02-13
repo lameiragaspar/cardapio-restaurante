@@ -1,0 +1,39 @@
+.box{
+    width: 250px;
+    border: 1px solid #daa520;
+    border-radius: 7px;
+    overflow: hidden;
+    flex-grow:1;
+    
+}
+.box .imagem{
+    height: 250px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.imagem img{
+    border-radius: 7px;
+    width: 100%;
+    min-height: 100%;
+}
+.box .descricao{
+    min-height: 220px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descricao h3{
+    font-weight: bolder;
+}
+.descricao small{
+    font-size: 14px;
+    color: #daa520;
+}
+.descricao p{
+    font-size: 16px;
+}
+.descricao span{
+    text-align: right;
+    font-weight: bold;
+}

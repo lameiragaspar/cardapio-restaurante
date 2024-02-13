@@ -1,0 +1,76 @@
+/*Classe dos botoes*/
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button.button,button.entrada,
+button.massa,button.carne,
+button.bebidas,button.salada,
+button.sobremesa{
+    box-shadow: 0 0 5px #00000041;
+    width: 160px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+button.entrada, button.massa,
+button.carne, button.bebidas,
+button.salada, button.sobremesa{
+    background-color: #daa520;
+}
+.button img,.entrada img,
+.massa img ,.carne img,
+.bebidas img ,.salada img,
+.sobremesa img{
+    width: 25px;
+}
+.button p,.entrada p,
+.massa p ,.carne p,
+.bebidas p ,.salada p,
+.sobremesa p{
+    font-weight: bold;
+}
+.button:hover{
+    background-color: #dbdbdb;
+}
+/*Fim da Classe dos botoes*/
+/*Campo de busca*/
+.campoBusca{
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #f3f3f3;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/*Cardapio*/
+.cardapio h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #daa520;
+    font-size: 32px;
+    padding: 20px;
+}
+.cardapioCards{
+    background-color: #F3F3F3;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
