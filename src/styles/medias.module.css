@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    #main #banner{
+        height: 70vh;
+        background-size: cover;
+    }
+    #banner h1{
+        font-size: 40px;
+    }
+    #banner p{
+        max-width: 450px;
+        font-size: 26px;
+    }
+    
+}

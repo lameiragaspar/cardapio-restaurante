@@ -1,6 +1,7 @@
 import Head from "next/head";
 import SecaoCategoria from "../Componentes/Categorias/Categoria.js";
 import styles from "../styles/Home.module.css";
+import style from '../styles/medias.module.css'; 
 
 export default function Home() {
   return(
@@ -15,14 +16,14 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className={styles.main}>
-        <section className={styles.banner}>
+      <main className={styles.main} id={style.main}>
+        <section className={styles.banner} id={style.banner}>
           {/*Imagem de fundo*/}
           <h1>Restaurant</h1>
           <p>De pratos clássicos a criações surpreendentes, nosso cardápio é um requinte de sabores refinados</p>
         </section>
         
-        <section className={styles.conteudo}>
+        <section className={`${styles.conteudo}`} >
             <SecaoCategoria />
         </section>
       </main>

@@ -1,28 +1,28 @@
 /*Classe dos botoes*/
 .botoes{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 15px;
 }
 
 .button,.entrada,
 .massa,.carne,
 .bebidas,.salada,
 .sobremesa{
-    box-shadow: 0 0 5px #00000041;
-    width: 160px;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #f3f3f3;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+     flex-grow: 1;
+     box-shadow: 0 0 5px #00000041;
+     width: 160px;
+     padding: 10px;
+     border-radius: 5px;
+     border: none;
+     background-color: #f3f3f3;
+     cursor: pointer;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
 }
 .entrada, .massa,
 .carne, .bebidas,
@@ -49,129 +49,98 @@
 .cardapioCards .id{
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: #fff no-repeat center center;
+    background-size: cover; 
 }
 .cardapioCards .id-1{
-    background: url(/img/espaguete.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(/img/espaguete.jpg);
 }
 .cardapioCards .id-2{
-    background:url(/img/lasanha.jpg)no-repeat center center;
-    background-size: cover;
+    background-image:url(/img/lasanha.jpg);
 }
 .cardapioCards .id-3{
-    background: url(/img/ravioli.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(/img/ravioli.jpg); 
 }
 .cardapioCards .id-4{
-    background: url(/img/capeletti.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(/img/capeletti.jpg)
 }
 .cardapioCards .id-5{
-    background: url(/img/nhoque.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(/img/nhoque.jpg)
 }
 .cardapioCards .id-6{
-    background: url(/img/bruschetta.jpg) no-repeat center center;
-    background-size: cover;
+    background-image: url(/img/bruschetta.jpg)  
 }
 .cardapioCards .id-7{
-    background: url(/img/carpaccio.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/carpaccio.jpg)  
 }
 .cardapioCards .id-8{
-    background: url(/img/paella.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/paella.jpg)  
 }
 .cardapioCards .id-9{
-    background: url(/img/ebi-spicy.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/ebi-spicy.jpg)  
 }
 .cardapioCards .id-10{
-    background: url(/img/aligot.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/aligot.jpg)  
 }
 .cardapioCards .id-11{
-    background: url(/img/file-mignon.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/file-mignon.jpg)  
 }
 .cardapioCards .id-12{
-    background:url(/img/picanha.png)no-repeat center center;
-    background-size: cover;
+     background-image:url(/img/picanha.png) 
 }
 .cardapioCards .id-13{
-    background: url(/img/bife-ancho.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/bife-ancho.jpg)  
 }
 .cardapioCards .id-14{
-    background: url(/img/tomahawk-steak.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/tomahawk-steak.jpg)  
 }
 .cardapioCards .id-15{
-    background: url(/img/prime-rib.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/prime-rib.jpg)  
 }
 .cardapioCards .id-16{
-    background: url(/img/tiramisu.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/tiramisu.jpg)  
 }
 .cardapioCards .id-17{
-    background: url(/img/cheesecake.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/cheesecake.jpg)  
 }
 .cardapioCards .id-18{
-    background: url(/img/banoffee.png) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/banoffee.png)  
 }
 .cardapioCards .id-19{
-    background: url(/img/mil-folhas.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/mil-folhas.jpg)  
 }
 .cardapioCards .id-20{
-    background: url(/img/pudim.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/pudim.jpg)  
 }
 .cardapioCards .id-21{
-    background: url(/img/cerveja.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/cerveja.jpg)  
 }
 .cardapioCards .id-22{
-    background:url(/img/refrigerante.jpg)no-repeat center center;
-    background-size: cover;
+     background-image:url(/img/refrigerante.jpg) 
 }
 .cardapioCards .id-23{
-    background: url(/img/suco.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/suco.jpg)  
 }
 .cardapioCards .id-24{
-    background: url(/img/whiskey.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/whiskey.jpg)  
 }
 .cardapioCards .id-25{
-    background: url(/img/agua.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/agua.jpg)  
 }
 .cardapioCards .id-26{
-    background: url(/img/salada-ceasar.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/salada-ceasar.jpg)  
 }
 .cardapioCards .id-27{
-    background: url(/img/salada-caprese.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/salada-caprese.jpg)  
 }
 .cardapioCards .id-28{
-    background: url(/img/salada-waldorf.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/salada-waldorf.jpg)  
 }
 .cardapioCards .id-29{
-    background: url(/img/salada-grega.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/salada-grega.jpg)  
 }
 .cardapioCards .id-30{
-    background: url(/img/salada-nicoise.jpg) no-repeat center center;
-    background-size: cover;
+     background-image: url(/img/salada-nicoise.jpg)  
 }
 /*Cardapio*/
 .cardapio h2{

@@ -25,6 +25,8 @@
     outline: none;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
     border-left: 2px solid #f3f3f3;
 }
 .input:focus{

@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+    #botoes{
+        padding: 0 2px;
+        background-color: aqua;
+        gap: 10px;
+    }
+}

@@ -3,6 +3,7 @@ import Card from "../Cards/cards.js";
 import CampoBusca from "../CampoDeBusca/campodeBusca.js";
 import { filtraCategoria, listaProdutos, buscaProduto } from "../../servico/funcoes.js";
 import styles from './Categoria.module.css'
+import style from './MediasCategorias.module.css'
 
 const SecaoCategoria = () => {
     
@@ -26,7 +27,7 @@ const SecaoCategoria = () => {
     return(
         <>
             {/**Botões */}
-            <section className={styles.botoes}>
+            <section className={styles.botoes} id={style.botoes}>
                 <button onClick={() => handlefiltraCategoria("Entradas")}
                 className={activeButton === 'Entradas'? styles.entrada : styles.button}>
                     <img src="/assets/entrada.png" alt="Entrada"/>
@@ -60,13 +61,11 @@ const SecaoCategoria = () => {
             </section>
             {/**Fim dos Botões */}
 
-            {/*Campo de busca*/}
             <>
                 <CampoBusca 
                 valor={textoDeBusca}
                 funcao={(event) => handleBuscaProduto(event.target.value)}/>
             </>
-            {/*Fim do Campo de busca*/}
 
             {/**Cardapio*/}
             <section className={styles.cardapio}>
