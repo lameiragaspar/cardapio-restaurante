@@ -3,9 +3,8 @@ import Card from "../Cards/cards.js";
 import CampoBusca from "../CampoDeBusca/campodeBusca.js";
 import { filtraCategoria, listaProdutos, buscaProduto } from "../../servico/funcoes.js";
 import styles from './Categoria.module.css'
-import style from './MediasCategorias.module.css'
 
-const SecaoCategoria = () => {
+const SecaoCategoria = (props) => {
     
     const [textoDeBusca, setTextoDeBusca] = useState("")
     const [cardapio, setCardapio] = useState(listaProdutos())
@@ -26,8 +25,13 @@ const SecaoCategoria = () => {
 
     return(
         <>
+            {/**Menu */}
+                <div className={styles.menuH} onClick={props.funcaoMostraOcultaMenu}>
+                    <img src="/assets/menu.svg" alt="menu"/>
+                </div>
             {/**Botões */}
-            <section className={styles.botoes} id={style.botoes}>
+            <section className={props.variavelOcutarMostar ? styles.ocultos : styles.botoes} onClick={props.funcaoMostraOcultaMenu}>
+                
                 <button onClick={() => handlefiltraCategoria("Entradas")}
                 className={activeButton === 'Entradas'? styles.entrada : styles.button}>
                     <img src="/assets/entrada.png" alt="Entrada"/>
@@ -61,14 +65,14 @@ const SecaoCategoria = () => {
             </section>
             {/**Fim dos Botões */}
 
-            <>
+            <div onClick={props.ocultaMenu}>
                 <CampoBusca 
                 valor={textoDeBusca}
                 funcao={(event) => handleBuscaProduto(event.target.value)}/>
-            </>
+            </div>
 
             {/**Cardapio*/}
-            <section className={styles.cardapio}>
+            <section className={styles.cardapio} onClick={props.ocultaMenu}>
                 <h2>Cardápio</h2>
                 <div className={styles.cardapioCards}>
                     {cardapio.map((card) =>(

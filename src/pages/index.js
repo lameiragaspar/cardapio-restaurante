@@ -1,9 +1,20 @@
 import Head from "next/head";
+import React, {useState} from "react";
 import SecaoCategoria from "../Componentes/Categorias/Categoria.js";
 import styles from "../styles/Home.module.css";
 import style from '../styles/medias.module.css'; 
 
 export default function Home() {
+
+  const [mostraOcultaB, setMostraOcultaB] = useState(false)
+
+  function mostrarOcultar(){
+    setMostraOcultaB(!mostraOcultaB)
+  }
+  function ocultaMenu(){
+    setMostraOcultaB(false)
+  }
+
   return(
     <>
       <Head>
@@ -16,15 +27,18 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className={styles.main} id={style.main}>
-        <section className={styles.banner} id={style.banner}>
+      <main className={styles.main} id={style.main} >
+        <section className={styles.banner} id={style.banner} onClick={ocultaMenu}>
           {/*Imagem de fundo*/}
           <h1>Restaurant</h1>
           <p>De pratos clássicos a criações surpreendentes, nosso cardápio é um requinte de sabores refinados</p>
         </section>
         
-        <section className={`${styles.conteudo}`} >
-            <SecaoCategoria />
+        <section className={`${styles.conteudo} ${style.conteudo}`} >
+            <SecaoCategoria 
+            funcaoMostraOcultaMenu={mostrarOcultar}
+            variavelOcutarMostar={mostraOcultaB}
+            ocultaMenu={ocultaMenu}/>
         </section>
       </main>
     </>

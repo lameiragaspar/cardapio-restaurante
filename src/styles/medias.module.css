@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     #main #banner{
-        height: 70vh;
+        height: 390px;
         background-size: cover;
     }
     #banner h1{
@@ -10,5 +10,33 @@
         max-width: 450px;
         font-size: 26px;
     }
-    
+    section.conteudo{
+        padding: 50px 5px;
+    } 
+}
+@media screen and (max-width: 430px) {
+    #main #banner{
+        height: 278px;
+        background-size: 100% 100%;
+    }
+    #banner h1{
+        font-size: 34px;
+    }
+    #banner p{
+        max-width: 280px;
+        font-size: 22px;
+    }
+    section.conteudo{
+        padding: 50px 10px;
+    }
+}
+@media screen and (max-width: 375px) {
+    section.conteudo{
+        padding: 50px 5px;
+    }
+}
+@media screen and (max-width:320px) {
+    section.conteudo{
+        padding: 20px 5px 50px;
+    }
 }

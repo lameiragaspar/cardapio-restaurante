@@ -1,20 +1,25 @@
 /*Classe dos botoes*/
-.botoes{
+.botoes,
+.ocultos{
+     margin: 0 auto;
      display: flex;
+     align-items: center;
      justify-content: space-between;
      flex-wrap: wrap;
      gap: 15px;
 }
-
-.button,.entrada,
-.massa,.carne,
-.bebidas,.salada,
-.sobremesa{
+.menuH{
+     display: none;
+}
+.button,
+.entrada,.massa,
+.carne, .bebidas,
+.salada, .sobremesa{
      flex-grow: 1;
      box-shadow: 0 0 5px #00000041;
-     width: 160px;
+     width: 150px;
      padding: 10px;
-     border-radius: 5px;
+     border-radius: 4px;
      border: none;
      background-color: #f3f3f3;
      cursor: pointer;
@@ -40,6 +45,7 @@
 .bebidas p ,.salada p,
 .sobremesa p{
     font-weight: bold;
+    font-size: 16px;
 }
 .button:hover{
     background-color: #dbdbdb;
@@ -52,6 +58,8 @@
     background: #fff no-repeat center center;
     background-size: cover; 
 }
+@media all{
+     
 .cardapioCards .id-1{
     background-image: url(/img/espaguete.jpg);
 }
@@ -142,6 +150,7 @@
 .cardapioCards .id-30{
      background-image: url(/img/salada-nicoise.jpg)  
 }
+}
 /*Cardapio*/
 .cardapio h2{
     font-family: 'Dancing Script', cursive;
@@ -160,3 +169,49 @@
     flex-wrap: wrap;
     gap: 40px;
 }
+
+/*Medias*/
+@media screen and (max-width: 375px){
+     .botoes,.ocultos{
+          justify-content: center;
+          gap: 10px;
+          flex-wrap: wrap;
+     }
+     .botoes button p,
+     .ocultos .button p{
+         display: none;
+     }
+     .botoes .entrada p,.botoes .massa p ,
+     .botoes .carne p,.botoes .bebidas p ,
+     .botoes .salada p,.botoes .sobremesa p{
+         display: block;
+     }
+     .cardapioCards{
+          padding: 20px 5px;
+     }    
+ }
+ @media screen and (max-width: 320px) {
+     .menuH{
+          display: block;
+          width: 100%;
+          background-color: #dbdbdb9a;
+          border-radius: 4px;
+          padding: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .botoes{
+          display: none;
+     }
+     .ocultos{
+          display: block;
+     }
+     .ocultos .button,
+     .entrada,.massa,
+     .carne, .bebidas,
+     .salada, .sobremesa{
+          width: 100%;
+          margin-bottom: 5px;
+     }
+ }
